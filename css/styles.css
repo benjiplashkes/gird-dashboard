@@ -52,8 +52,8 @@ h3 {
   font-size: var(--font-size-l);
 }
 .avatar {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border: 1px solid black;
 }
@@ -103,22 +103,30 @@ li a {
 }
 
 .top-header{
-    display: flex;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: 50px 5fr repeat(3, minmax(auto, 150px));
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem ;
 }
-.search{
-    flex: 1;
-    width:100%;
-    display: flex;
-    gap:1rem;
-    
-}
-.search input{
+input{
     display: inline-block;
     width:70%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
     height: 2rem;
 
+}
+.profile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+.profile-button{
+    display: block;
+    height: 100%;
+    max-height: 48px;
+    min-width: 48px;
 }
