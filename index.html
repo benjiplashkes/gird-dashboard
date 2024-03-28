@@ -3,295 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin project dashboard - Benji Plashkes</title>
-    <link rel="stylesheet" href="./css/resets.css">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/scripts.js" defer></script>
+    <title>Document</title>
   </head>
   <body>
-    <div class="site-wrapper">
-      <aside class="sidebar">
-        <div class="logo">
-          <img class="site-logo" src="./images/Placeholder.svg" width="48" height="48" alt="Dashboard site - Logo" />
-          <h1 class="site-title">Dashboard</h1>
+    <aside class="sidebar">
+      <div class="logo">
+        <img
+          src="./images/Placeholder.svg"
+          alt="site logo"
+          class="sitelogo"
+          width="48"
+        />
+        <h1 class="site-heading">Dashboard</h1>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Profile</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Messages</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">History</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Tasks</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Communities</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="settings">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Settings</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Support</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <img
+                src="./images/Placeholder.svg"
+                alt=""
+                height="32"
+                width="32"
+                height="32"
+                width="32"
+                class="icon"
+              />
+              <p class="nav-text">Privacy</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="wrapper">
+      <header class="site-header">
+        <div class="top-header">
+          <search class="search">
+            <button type="button" aria-roledescription="search button">
+              <img src="./images/Placeholder.svg" alt="search" width="24" />
+            </button>
+            <label for="search" class="visually-hidden">search</label>
+            <input type="search" name="search" id="search" />
+          </search>
+          <div class="profile">
+            <button><img src="" alt="notifications" class="notify" /></button>
+            <button>
+              <img src="" alt="avatar" class="avatar profile-avatar" />
+            </button>
+            <button class="profile-button">Benji Plashles</button>
+          </div>
         </div>
-        <nav class="main-nav">
-          <ul>
-            <li class="nav-item">
-              <a href="#">
-                <img src="./images/Placeholder.svg" width="32" height= alt="Home link" class="icon" aria-hidden="true" />
-                <div>Home</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#Profile">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Profile link"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Profile</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#messages">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Mesaages link"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Messages</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#history">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="History link"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>History</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#tasks">
-                <img src="./images/Placeholder.svg" width="32" height= alt="Tasks link" class="icon" aria-hidden="true" />
-                <div>Tasks</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#communities">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Communities Logo"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Communities</div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="settings">
-          <ul>
-            <li class="nav-item">
-              <a href="#settings">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Settings link"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Settings</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#Support">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Support Links"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Support</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#privacy">
-                <img
-                  src="./images/Placeholder.svg" width="32" height=
-                  alt="Privacy Link"
-                  class="icon"
-                  aria-hidden="true"
-                />
-                <div>Privacy</div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <div class="main-container">
-          <header class="site-header">
-            <div>
-              <search class="search">
-                <button></button>
-                <input type="search" />
-              </search>
-              <div class="profile">
-                <button class="notifications">
-                  <img src="./images/Placeholder.svg" width="32" height= alt="Notification bell" class="bell" />
-                </button>
-                <div class="profile">
-                  <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" /><a
-                    href="#profile"
-                    class="profile-link"
-                    >Benji Plashkes</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="hero">
-              <div class="hello">
-                <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar large__avatar" />
-                <p class="gretting">Hi there,</p>
-                <h1 class="user">Benji Plashkes @benjip</h1>
-              </div>
+        <section class="hero">
+          <div class="hero-content">
+            <img
+              src="./images/Placeholder.svg"
+              alt="avatar image"
+              width="48"
+              class="avatar avatar__large"
+            />
+            <div class="greeting">
+              <p class="greeting-text">Hi there,</p>
+              <p class="greeting-username">Benji Plashkes</p>
             </div>
             <div class="actions">
-              <button class="action-button">New</button>
-              <button class="action-button">Upload</button>
-              <button class="action-button">Share</button>
+              <button class="cta action-button">New</button>
+              <button class="cta action-button">Upload</button>
+              <button class="cta action-button">Share</button>
             </div>
-          </header>
-          <main class="main-content">
-              <section class="projects">
-                  <h2 class="projects-title">Your Projects</h2>
-                  <section class="projects-wrapper wrapper">
-                      <article class="card">
-                          <h3 class="card-title">Cool Project</h3>
-                          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                              Cum sed nihil quia aspernatur.</p>
-                              <div class="meta">
-                                  <button>Star</button>
-                                  <button>Like</button>
-                                  <button>Share</button>
-                                </article>
-                                <article class="card">
-                                    <h3 class="card-title">Cool Project</h3>
-                                    <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                                        Cum sed nihil quia aspernatur.</p>
-                                        <div class="meta">
-                                            <button>Star</button>
-                                            <button>Like</button>
-                                            <button>Share</button>
-                                        </article>
-                                        <article class="card">
-                                            <h3 class="card-title">Cool Project</h3>
-                                            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                                                Cum sed nihil quia aspernatur.</p>
-                                                <div class="meta">
-                                                    <button>Star</button>
-                                                    <button>Like</button>
-                                                    <button>Share</button>
-                                                </article>
-                                                <article class="card">
-                                                    <h3 class="card-title">Cool Project</h3>
-                                                    <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                                                        Cum sed nihil quia aspernatur.</p>
-                                                        <div class="meta">
-                                                            <button>Star</button>
-                                                            <button>Like</button>
-                                                            <button>Share</button>
-                                                        </article>
-                                                        <article class="card">
-                                                            <h3 class="card-title">Cool Project</h3>
-                                                            <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                                                                Cum sed nihil quia aspernatur.</p>
-                                                                <div class="meta">
-                                                                    <button>Star</button>
-                                                                    <button>Like</button>
-                                                                    <button>Share</button>
-                                                                </article>
-                                                                <article class="card">
-                                                                    <h3 class="card-title">Cool Project</h3>
-                                                                    <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio nemo itaque incidunt neque tempora. Magnam quos possimus, dolore labore quam tenetur nemo eius accusantium consequatur, distinctio ea neque voluptatibus.
-                                                                        Cum sed nihil quia aspernatur.</p>
-                                                                        <div class="meta">
-                                                                            <button>Star</button>
-                                                                            <button>Like</button>
-                                                                            <button>Share</button>
-                                                                        </article>
-                                                                        
-                                                                    </section>
-                                                                    
-                                                                </section>
-                                                                <aside>
-                                                                    <section class="news-wrapper wrapper">
-                                                                        <h2 class="news-heading">Announcements</h2>
-                                                                        <ul>
-                                                                            <li class="news-item">
-                                                                                <h3>Site Maintenance</h3>
-                                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, molestias.</p>
-                                                                            </li>
-                                                                            <li class="news-item">
-                                                                                
-                                                                                <h3>Community Share Day</h3>
-                                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                                                                            </li>   
-                                                                            <li class="news-item">
-                                                                                <h3>Updated privacy policy</h3>
-                                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis ex at omnis ab! Fugit.</p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </section>
-                                                                    <section class="treanding">
-                <h2 class="trending-heading">Trending</h2>
-                <div class="trending-wrapper wrapper">
-                    <ul>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#user">
-                                    <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" >
-                                    <div>
-                                        <h4>@username</h4>
-                                        <p>post title</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#user">
-                                    <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" >
-                                    <div>
-                                        <h4>@username</h4>
-                                        <p>post title</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#user">
-                                    <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" >
-                                    <div>
-                                        <h4>@username</h4>
-                                        <p>post title</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#user">
-                                    <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" >
-                                    <div>
-                                        <h4>@username</h4>
-                                        <p>post title</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>                                                
-                        <li class="trending-item">
-                            <article class="trending-card">
-                                <a href="#user">
-                                    <img src="./images/Placeholder.svg" width="32" height= alt="avatar" class="avatar" >
-                                    <div>
-                                        <h4>@username</h4>
-                                        <p>post title</p>
-                                    </div>
-                                </a>
-                            </article>
-                        </li>                        
-                    </ul>
+          </div>
+        </section>
+      </header>
+      <main class="main-content">
+        <section class="projects">
+          <h2 class="projects-title">Your Projects</h2>
+          <div class="wrapper projects-grid">
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+            <article class="card project-card">
+              <div class="content">
+                <h3 class="project-title card-title">Super Cool Project</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi natus optio aperiam vero deleniti repudiandae.
+                </p>
+              </div>
+              <div class="meta">
+                <button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  /></button
+                ><button class="meta-button">
+                  <img
+                    src="./images/Placeholder.svg"
+                    alt="star project"
+                    width="32"
+                  />
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <aside>
+          <section class="news">
+            <h2 class="news-heading">Announcements</h2>
+            <ul class="news-list">
+              <li class="news-item">
+                <h3>Site Maintenance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis corrupti eveniet totam rerum nemo tempore?</p>
+              </li>
+              <li class="news-item">
+                <h3>Community share day</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident?</p>
+              </li>
+              <li class="news-item">
+                <h3>Updated privacy policy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias voluptates reiciendis!</p>
+              </li>
+            </ul>
+          </section>
+          <section class="trending">
+            <h2 class="trending-heading">Trending</h2>
+            <ul class="trending-list">
+              <li class="trendingitem">
+                <img src="./images/Placeholder.svg" alt="avatar" width="32" class="avatar">
+                <div>
+                  <h3 class="trending-user">@trending-heading</h3>
+                  <p class="trending-title">world pece builder</p>
                 </div>
-            </section>
-        </div>
+              </li>
+              <li class="trendingitem">
+                <img src="./images/Placeholder.svg" alt="avatar" width="32" class="avatar">
+                <div>
+                  <h3 class="trending-user">@benjip</h3>
+                  <p class="trending-title">Super cool project</p>
+                </div>
+              </li>
+              <li class="trendingitem">
+                <img src="./images/Placeholder.svg" alt="avatar" width="32" class="avatar">
+                <div>
+                  <h3 class="trending-user">@kendell</h3>
+                  <p class="trending-title">Life changing app</p>
+                </div>
+              </li>
+              <li class="trendingitem">
+                <img src="./images/Placeholder.svg" alt="avatar" width="32" class="avatar">
+                <div>
+                  <h3 class="trending-user">@alex</h3>
+                  <p class="trending-title">No traffic maker</p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </aside>
-    </main>
-</div>
-</body>
+      </main>
+    </section>
+  </body>
 </html>
