@@ -1,28 +1,124 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-shadow: var(--box-shadow);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-shadow: var(--box-shadow);
 }
-:root{
-    --font-family: Arial, Helvetica, sans-serif;
-    --color-background: rgb(179, 182, 186);
-    --color-background-light:rgb(224, 242, 248);
-    --color-secondary: rgba(0, 145, 212, 255);
-    --color-text-light: var(var(--color-background-light));
-    --color-text-dark: rgb(10,10,20);
-    --border-dev: 1px dashed black;
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --color-background: rgb(212, 216, 221);
+  --color-background-light: rgb(224, 242, 248);
+  --color-secondary: rgba(0, 145, 212, 255);
+  --color-text-light: var(var(--color-background-light));
+  --color-text-dark: rgb(10, 10, 20);
+  --border-dev: 1px dashed black;
+  --font-size-m: calc(1rem * 1.2);
+  --font-size-l: calc(1rem * 1.4);
+  --font-size-xl: calc(1rem * 1.7);
+  --font-size-xxl: calc(1rem * 2);
+}
+button{
+    line-height: 0;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0%;
+  line-height: 0ch;
+}
+h1 {
+  font-size: var(--font-size-xxl);
+}
+h2 {
+  font-size: var(--font-size-xl);
+}
+h3 {
+  font-size: var(--font-size-l);
+}
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+h3.trending-user {
+  font-weight: 600;
+  font-size: 1rem;
+}
+p.trending-title {
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
+}
+/* Utility classes */
+.visually-hidden{
+    position: absolute;
+    top:-9999;
+    right: -9999;
+    display: block;
+    width: 1px;
+    height: 1px;
+    color: transparent;
+    visibility: hidden;
+}
+/* Layout */
+
+body {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.logo,
+.sidebar li a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+li a {
+  margin-bottom: 1rem;
+}
+.main-nav {
+  margin: 4rem 0 50% 0;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-around;
 
 }
-body{
-    font-family: var(--font-family);
-    background-color: var(--color-background);
-    color: var(--color-text-dark);
+.search{
+    flex: 1;
+    width:100%;
+    display: flex;
+    gap:1rem;
+    
 }
+.search input{
+    display: inline-block;
+    width:70%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    height: 2rem;
 
-h1,h2,h3 {
-    text-transform: capitalize;
-}
-img{
-    max-width: 100%;
 }
