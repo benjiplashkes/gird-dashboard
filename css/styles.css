@@ -57,6 +57,9 @@ img {
   padding: 0%;
   line-height: 0ch;
 }
+img[src*=".svg"] {
+    color: var(--color-text-light);
+}
 h1 {
   font-size: var(--font-size-xxl);
 }
